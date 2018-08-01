@@ -21,7 +21,7 @@ db.initialize();
 middlewares.initialize(app, __dirname);
 
 // setup routes
-routes.initialize(app, __dirname);
+routes.initialize(app);
 
 // start http server
 http.createServer(app).listen(app.get('port'), app.get('ipAddress'), () => {
