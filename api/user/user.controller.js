@@ -7,7 +7,7 @@ const controller = {
   async createUser(req, res) {
     try {
       const findUser = await userService.findByEmail(req.body.mail);
-      if (findUser.length === 0) {
+      if (findUser === null) {
         const data = await userService.registerUser(req.body);
         res.status(200).send({
           success: true,
