@@ -7,7 +7,7 @@ mongoose.Promise = global.Promise;
 
 
 const initialize = () => {
-  mongoose.connect(config.get('database.host'))
+  mongoose.connect(config.get('database.host'), { useNewUrlParser: true })
     .then(() => {
       logger.info(`database connected on ${config.get('database.host')}`);
     })
