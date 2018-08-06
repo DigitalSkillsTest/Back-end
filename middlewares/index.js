@@ -4,6 +4,7 @@ const compression = require('compression');
 const bodyParser = require('body-parser');
 const helmet = require('helmet');
 const config = require('../config');
+const passport = require('./passport');
 const cors = require('./CORS');
 const fileUpload = require('./fileupload');
 
@@ -56,6 +57,9 @@ const initialize = (app, root) => {
   app.use(bodyParser.json({
     limit: config.get('server.bodyParser.limit'),
   }));
+
+  // Initialize passport module
+  passport.initialize(app);
 };
 
 module.exports = {
