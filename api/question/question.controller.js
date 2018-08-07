@@ -4,16 +4,6 @@ const questionService = require('./question.service');
 // question controller
 const controller = {
 
-  // get list of question
-  async getQuestionsList(req, res) {
-    try {
-      const data = await questionService.getAllQuestion();
-      res.status(200).send({ success: true, message: 'question list', data });
-    } catch (error) {
-      logger.error(error);
-      res.status(500).send({ success: false, message: 'Internal server error' });
-    }
-  },
   // add simple type one question
   async addQuestion(req, res) {
     try {
@@ -45,23 +35,13 @@ const controller = {
       res.status(500).send({ success: false, message: 'Internal server error' });
     }
   },
-  // get question list for enquiry form
-  async createEnquiryForm(req, res) {
+  // update question
+  async updateQuestion(req, res) {
     try {
-      const data = await questionService.findQuestionByIsShow();
-      const message = data.length > 0 ? 'Question list' : 'No question found';
-      res.status(200).send({ success: true, message, data });
-    } catch (error) {
-      logger.error(error);
-      res.status(500).send({ success: false, message: 'Internal server error' });
-    }
-  },
-  // delete question
-  async deleteQuestion(req, res) {
-    try {
-      const id = req.params.id;
-      const data = await questionService.deleteQuestion(id);
-      res.status(200).send({ success: true, message: 'record Deleted', data });
+      const { id } = req.params;
+      const body = { ...req.body };
+      const data = await questionService.updateQuestion(id, body);
+      res.status(200).send({ success: true, message: 'record update', data });
     } catch (error) {
       logger.error(error);
       res.status(500).send({ success: false, message: 'Internal server error' });
@@ -70,7 +50,7 @@ const controller = {
   // get question detail by id
   async getQuestionById(req, res) {
     try {
-      const id = req.params.id;
+      const { id } = req.params;
       const data = await questionService.getQuestionById(id);
       res.status(200).send({ success: true, message: 'record found', data });
     } catch (error) {
@@ -78,17 +58,29 @@ const controller = {
       res.status(500).send({ success: false, message: 'Internal server error' });
     }
   },
-  // add question with image
-  async addQuestionWithImage(req, res) {
+  // get list of question
+  async getQuestionsList(req, res) {
     try {
-      const body = JSON.parse(req.body.data);
-      res.json({ message: 'File uploaded successfully' });
+      const data = await questionService.getAllQuestion();
+      res.status(200).send({ success: true, message: 'question list', data });
     } catch (error) {
+      logger.error(error);
+      res.status(500).send({ success: false, message: 'Internal server error' });
+    }
+  },
+  // delete question
+  async deleteQuestion(req, res) {
+    try {
+      const { id } = req.params;
+      await questionService.deleteQuestion(id);
+      res.status(200).send({ success: true, message: 'record Deleted' });
+    } catch (error) {
+      logger.error(error);
       res.status(500).send({ success: false, message: 'Internal server error' });
     }
   },
 
+
 };
 
 module.exports = controller;
-

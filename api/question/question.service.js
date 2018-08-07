@@ -11,16 +11,21 @@ const service = {
     return Question.insertMany(newQuestionList);
   },
   getAllQuestion() {
-    return Question.find();
+    return Question.find({ isDeleted: false });
   },
-  findQuestionByIsShow() {
-    return Question.find({ isShow: true });
+  getQuestionsID() {
+    return Question.find({ isDeleted: false }, '_id categories_COD topic_Cod question_Cod').exec();
   },
-  deleteQuestion(id) {
-    return Question.findOneAndRemove({ _id: mongoose.Types.ObjectId(id) });
+  updateQuestion(docId, body) {
+    const id = docId;
+    return Question.findByIdAndUpdate(id, { $set: body }, { new: true }).exec();
   },
-  getQuestionById(id) {
-    return Question.findById({ _id: mongoose.Types.ObjectId(id) });
+  deleteQuestion(docId) {
+    const id = docId;
+    return Question.findByIdAndUpdate(id, { $set: { isDeleted: true } }, { new: true }).exec();
+  },
+  getQuestionById(docId) {
+    return Question.find({ _id: mongoose.Types.ObjectId(docId), isDeleted: false });
   },
 };
 module.exports = service;

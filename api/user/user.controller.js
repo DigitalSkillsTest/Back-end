@@ -10,13 +10,25 @@ const controller = {
       const data = await userService.findByEmail(mail);
       res.status(200).send({
         success: true,
-        title: 'success',
         message: 'result',
         data,
       });
     } catch (error) {
       logger.error(error);
-      res.status(500).send({ success: false, title: 'error', message: 'Internal server error' });
+      res.status(500).send({ success: false, message: 'Internal server error' });
+    }
+  },
+  async findByUserId(req, res) {
+    try {
+      const { id } = req.params;
+      const data = await userService.findById(id);
+      const response = {
+        success: true, message: 'record find', data,
+      };
+      res.status(200).send(response);
+    } catch (error) {
+      logger.error(error);
+      res.status(500).send({ success: false, message: 'Internal server error' });
     }
   },
 };

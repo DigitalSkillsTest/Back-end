@@ -37,8 +37,7 @@ const createToken = (user) => {
 const verifyJWTHeader = () => (req, res, next) => {
   passport.authenticate('jwt', { session: false }, (error, user) => {
     if (!user) { res.status(500).send('There is problem with your request'); } else {
-      req.userName = user.email;
-      req.userId = user._id;
+      req.userId = user.id;
       next();
     }
   })(req, res, next);

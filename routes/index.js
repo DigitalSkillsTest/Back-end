@@ -2,12 +2,14 @@ const router = require('express').Router();
 const { questionRoutes } = require('../api/question');
 const { userRoutes } = require('../api/user');
 const { authRoutes } = require('../api/auth');
+const { examRoutes } = require('../api/exam');
 const passport = require('../middlewares/passport');
 
 const routes = () => {
   router.get('/', (req, res) => res.send('api server start'));
   router.use('/user', userRoutes);
   router.use('/question', questionRoutes);
+  router.use('/exam', examRoutes);
   return router;
 };
 

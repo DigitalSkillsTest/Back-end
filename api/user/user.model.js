@@ -11,4 +11,4 @@ const schema = mongoose.Schema({
   createdBy: String,
   updatedBy: String,
 });
-module.exports = mongoose.model('User', schema);
+module.exports = mongoose.model('user', schema);

@@ -10,6 +10,9 @@ const service = {
   findByEmail(mail) {
     return User.findOne({ mail });
   },
+  findById(id) {
+    return User.findById({ _id: mongoose.Types.ObjectId(id) });
+  },
 
 };
 
