@@ -13,8 +13,8 @@ const service = {
   getAllQuestion() {
     return Question.find({ isDeleted: false });
   },
-  getQuestionsID() {
-    return Question.find({ isDeleted: false }, '_id categories_COD topic_Cod question_Cod').exec();
+  getQuestionsListForExam() {
+    return Question.find({ isDeleted: false }).exec();
   },
   updateQuestion(docId, body) {
     const id = docId;

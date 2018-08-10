@@ -1,4 +1,4 @@
-// const mongoose = require('mongoose');
+const mongoose = require('mongoose');
 const Exam = require('./exam.model');
 
 /** all exam service */
@@ -6,11 +6,11 @@ const service = {
   createExam(body) {
     return Exam.create(body);
   },
-  getQuestion(docId) {
-    const id = docId;
-    return Exam.findOne(id)
-      .populate({ path: 'questions.questionId', match: { topic_Cod: 'A.1' } })
-      .exec();
+  findExamById(docId) {
+    return Exam.findById({ _id: mongoose.Types.ObjectId(docId) }).exec();
+  },
+  findExamIdAndSaveScore(docId, questionId, score) {
+    return Exam.findOne({ _id: mongoose.Types.ObjectId(docId) }).exec();
   },
 };
 

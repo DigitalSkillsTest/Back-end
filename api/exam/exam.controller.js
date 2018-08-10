@@ -6,13 +6,45 @@ const examService = require('./exam.service');
 const controller = {
   async startTest(req, res) {
     try {
-      const questionList = await questionService.getQuestionsID();
-      const questions = questionList.map(question => ({ questionId: question._id }));
+      const questionList = await questionService.getQuestionsListForExam();
+      const questions = questionList.map(question => question);
       const body = { userId: req.userId, questions };
-      const createExam = await examService.createExam(body);
-      const newQuestionList = await examService.getQuestion(createExam._id);
-      const data = newQuestionList.questions[0].questionId;
-      res.status(200).send({ success: true, message: 'exam start', data });
+      const examSession = await examService.createExam(body);
+      const data = { examId: examSession._id };
+      res.status(200).send({ success: true, message: 'success', data });
+    } catch (error) {
+      logger.error(error);
+      res.status(500).send({ success: false, message: 'Internal server error' });
+    }
+  },
+  async nextQuestion(req, res) {
+    try {
+      const { examId, QIndex } = req.body;
+      const questionNumber = parseInt(QIndex, 0);
+      const examSession = await examService.findExamById(examId);
+      if (
+        !examSession
+        || Number.isNaN(questionNumber)
+        || questionNumber < 1
+        || examSession.questions.length < questionNumber) {
+        res.status(200).send({ success: true, message: 'Invalid examId or QNumber' });
+      } else {
+        const data = {
+          examId: examSession._id,
+          question: examSession.questions[questionNumber - 1],
+        };
+        res.status(200).send({ success: true, message: 'success', data });
+      }
+    } catch (error) {
+      logger.error(error);
+      res.status(500).send({ success: false, message: 'Internal server error' });
+    }
+  },
+  async saveAnswer(req, res) {
+    try {
+      const { examId, questionId, score } = req.body;
+      const data = await examService.findExamIdAndSaveScore(examId, questionId, score);
+      res.status(200).send({ success: true, message: 'success', data });
     } catch (error) {
       logger.error(error);
       res.status(500).send({ success: false, message: 'Internal server error' });
