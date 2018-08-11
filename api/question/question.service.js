@@ -14,7 +14,17 @@ const service = {
     return Question.find({ isDeleted: false });
   },
   getQuestionsListForExam() {
-    return Question.find({ isDeleted: false }).exec();
+    return Question.find(
+      { isDeleted: false },
+      {
+        isDeleted: 0,
+        createdOn: 0,
+        updatedOn: 0,
+        'options.isDeleted': 0,
+        'options.createdOn': 0,
+        'options.updatedOn': 0,
+      },
+    ).exec();
   },
   updateQuestion(docId, body) {
     const id = docId;

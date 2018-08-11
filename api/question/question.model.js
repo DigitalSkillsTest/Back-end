@@ -2,6 +2,12 @@ const mongoose = require('mongoose');
 
 const { Schema } = mongoose;
 
+const option = new Schema({
+  answer: { type: String },
+  code: { type: String },
+  score: { type: String },
+});
+
 const schema = new Schema({
   categories_COD: { type: String },
   category: { type: String },
@@ -9,11 +15,6 @@ const schema = new Schema({
   subCat: { type: String },
   question_Cod: { type: String },
   question: { type: String },
-  options: [{
-    answer: { type: String },
-    code: { type: String },
-    score: { type: String },
-
-  }],
+  options: [option],
 });
 module.exports = mongoose.model('question', schema);

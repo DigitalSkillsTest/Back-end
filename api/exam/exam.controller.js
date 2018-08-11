@@ -7,7 +7,7 @@ const controller = {
   async startTest(req, res) {
     try {
       const questionList = await questionService.getQuestionsListForExam();
-      const questions = questionList.map(question => question);
+      const questions = questionList.map(question => question._doc);
       const body = { userId: req.userId, questions };
       const examSession = await examService.createExam(body);
       const data = { examId: examSession._id };
@@ -42,9 +42,11 @@ const controller = {
   },
   async saveAnswer(req, res) {
     try {
-      const { examId, questionId, score } = req.body;
-      const data = await examService.findExamIdAndSaveScore(examId, questionId, score);
-      res.status(200).send({ success: true, message: 'success', data });
+      const {
+        examId, questionId, userScore, userCode,
+      } = req.body;
+      await examService.findExamIdAndSaveScore(examId, questionId, userScore, userCode);
+      res.status(200).send({ success: true, message: 'success' });
     } catch (error) {
       logger.error(error);
       res.status(500).send({ success: false, message: 'Internal server error' });
