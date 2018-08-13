@@ -20,7 +20,7 @@ const service = {
     ).exec();
   },
   findExamIdAndSaveScore(docId, questionId, score, code) {
-    return Exam.update(
+    return Exam.findOneAndUpdate(
       {
         _id: mongoose.Types.ObjectId(docId),
         'questions._id': mongoose.Types.ObjectId(questionId),
@@ -32,6 +32,7 @@ const service = {
           'questions.$.userCode': code,
         },
       },
+      { new: true },
     ).exec();
   },
 };

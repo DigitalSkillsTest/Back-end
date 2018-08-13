@@ -33,7 +33,7 @@ const controller = {
           examId: examSession._id,
           question: examSession.questions[questionNumber - 1],
         };
-        res.status(200).send({ success: true, message: 'success', data });
+        res.status(200).send({ success: true, message: 'answer is not save', data });
       }
     } catch (error) {
       logger.error(error);
@@ -45,7 +45,10 @@ const controller = {
       const {
         examId, questionId, userScore, userCode,
       } = req.body;
-      await examService.findExamIdAndSaveScore(examId, questionId, userScore, userCode);
+      const result = await examService.findExamIdAndSaveScore(examId, questionId, userScore, userCode);
+      if (!result) {
+        res.status(200).send({ success: false, message: 'Invalid examId or questionId' });
+      }
       res.status(200).send({ success: true, message: 'success' });
     } catch (error) {
       logger.error(error);
