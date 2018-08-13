@@ -3,6 +3,7 @@ const LocalStrategy = require('passport-local').Strategy;
 const jwt = require('jsonwebtoken');
 const passportJWT = require('passport-jwt');
 const { logger } = require('../utils');
+const config = require('../config');
 const { User } = require('../api/user');
 
 const { ExtractJwt } = passportJWT;
@@ -12,7 +13,7 @@ const jwtOptions = {};
 jwtOptions.jwtFromRequest = ExtractJwt.fromAuthHeaderAsBearerToken();
 
 // To-do read it from config file
-jwtOptions.secretOrKey = 'ashutec2017';
+jwtOptions.secretOrKey = config.get('jwtOptions.secretOrKey');
 
 const createToken = (user) => {
   const payload = { id: user.id };

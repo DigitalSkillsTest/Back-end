@@ -24,7 +24,7 @@ const service = {
         'options.createdOn': 0,
         'options.updatedOn': 0,
       },
-    ).exec();
+    ).lean().exec();
   },
   updateQuestion(docId, body) {
     const id = docId;

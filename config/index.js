@@ -157,6 +157,13 @@ const config = convict({
       env: 'DB_HOST',
     },
   },
+  jwtOptions: {
+    secretOrKey: {
+      doc: 'jwt secretOrKey',
+      format: String,
+      default: 'ashutec2017',
+    },
+  },
   logger: {
     enableConsoleTransport: {
       doc: 'enable console transport',

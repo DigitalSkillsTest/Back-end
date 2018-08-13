@@ -7,7 +7,7 @@ const controller = {
   async startTest(req, res) {
     try {
       const questionList = await questionService.getQuestionsListForExam();
-      const questions = questionList.map(question => question._doc);
+      const questions = questionList.sort((a, b) => a.question_Cod > b.question_Cod);
       const body = { userId: req.userId, questions };
       const examSession = await examService.createExam(body);
       const data = { examId: examSession._id };

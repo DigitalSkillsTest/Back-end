@@ -22,9 +22,7 @@ const initialize = (app) => {
 
   // All other router down below require JWT authentication in header, This middelware verify it
   // when successful allow other routes to execute
-  app.use(passport.verifyJWTHeader());
-
-  app.use('/api', routes());
+  app.use('/api', passport.verifyJWTHeader(), routes());
 };
 
 module.exports = {
