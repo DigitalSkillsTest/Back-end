@@ -33,7 +33,7 @@ const controller = {
           examId: examSession._id,
           question: examSession.questions[questionNumber - 1],
         };
-        res.status(200).send({ success: true, message: 'answer is not save', data });
+        res.status(200).send({ success: true, message: 'success', data });
       }
     } catch (error) {
       logger.error(error);
