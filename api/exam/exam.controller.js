@@ -7,7 +7,14 @@ const controller = {
   async startTest(req, res) {
     try {
       const questionList = await questionService.getQuestionsListForExam();
-      const questions = questionList.sort((a, b) => a.question_Cod > b.question_Cod);
+      const questions = questionList.sort((a, b) => {
+        if (a.question_Cod > b.question_Cod) {
+          return 1;
+        } if (a.question_Cod < b.question_Cod) {
+          return -1;
+        }
+        return 0;
+      });
       const body = { userId: req.userId, questions };
       const examSession = await examService.createExam(body);
       const data = { examId: examSession._id };
