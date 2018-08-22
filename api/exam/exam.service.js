@@ -11,7 +11,6 @@ const service = {
       { _id: mongoose.Types.ObjectId(docId) },
       {
         'questions.isDeleted': 0,
-        'questions.createdOn': 0,
         'questions.updatedOn': 0,
         'questions.options.isDeleted': 0,
         'questions.options.createdOn': 0,

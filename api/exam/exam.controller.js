@@ -1,6 +1,7 @@
 const { logger } = require('../../utils');
 const { questionService } = require('../question');
 const examService = require('./exam.service');
+const moment = require('moment');
 
 // exam controller
 const controller = {
@@ -29,6 +30,7 @@ const controller = {
       const { examId, QIndex } = req.body;
       const questionNumber = parseInt(QIndex, 0);
       const examSession = await examService.findExamById(examId);
+
       if (
         !examSession
         || Number.isNaN(questionNumber)
@@ -36,11 +38,19 @@ const controller = {
         || examSession.questions.length < questionNumber) {
         res.status(200).send({ success: true, message: 'Invalid examId or QNumber' });
       } else {
+        const now = moment(new Date());
+        const examStartTime = moment(examSession.createdOn);
+        const diff = moment.duration(now.diff(examStartTime)).asMinutes();
         const data = {
           examId: examSession._id,
           question: examSession.questions[questionNumber - 1],
         };
-        res.status(200).send({ success: true, message: 'success', data });
+
+        if (diff > 31) {
+          res.status(200).send({ success: true, message: `you spend ${diff} minutes,Try again...` });
+        } else {
+          res.status(200).send({ success: true, message: 'success', data });
+        }
       }
     } catch (error) {
       logger.error(error);
