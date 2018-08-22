@@ -47,7 +47,7 @@ const controller = {
         };
 
         if (diff > 31) {
-          res.status(200).send({ success: true, message: `you spend ${diff} minutes,Try again...` });
+          res.status(200).send({ success: true, message: `you spend ${diff} minutes,Try again...`, data: null });
         } else {
           res.status(200).send({ success: true, message: 'success', data });
         }
