@@ -38,19 +38,14 @@ const controller = {
         || examSession.questions.length < questionNumber) {
         res.status(200).send({ success: true, message: 'Invalid examId or QNumber' });
       } else {
-        const now = moment(new Date());
-        const examStartTime = moment(examSession.createdOn);
-        const diff = moment.duration(now.diff(examStartTime)).asMinutes();
+        // const examStartTime = moment(examSession.createdOn);
+        // const examLastUpdate = moment(examSession.updatedOn);
+        // const diff = moment.duration(examLastUpdate.diff(examStartTime)).asMinutes();
         const data = {
           examId: examSession._id,
           question: examSession.questions[questionNumber - 1],
         };
-
-        if (diff > 31) {
-          res.status(200).send({ success: true, message: `you spend ${diff} minutes,Try again...`, data: null });
-        } else {
-          res.status(200).send({ success: true, message: 'success', data });
-        }
+        res.status(200).send({ success: true, message: 'success', data });
       }
     } catch (error) {
       logger.error(error);
