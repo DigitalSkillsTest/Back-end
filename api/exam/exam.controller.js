@@ -1,7 +1,9 @@
+// const moment = require('moment');
 const { logger } = require('../../utils');
 const { questionService } = require('../question');
 const examService = require('./exam.service');
-const moment = require('moment');
+const categories = require('../../json/category.json');
+const subCategories = require('../../json/subcategory.json');
 
 // exam controller
 const controller = {
@@ -20,6 +22,16 @@ const controller = {
       const examSession = await examService.createExam(body);
       const data = { examId: examSession._id };
       res.status(200).send({ success: true, message: 'success', data });
+    } catch (error) {
+      logger.error(error);
+      res.status(500).send({ success: false, message: 'Internal server error' });
+    }
+  },
+  async getExamInfo(req, res) {
+    try {
+      const { examId } = req.params;
+      const data = await examService.findExamById(examId);
+      res.status(200).send({ success: true, message: 'result', data });
     } catch (error) {
       logger.error(error);
       res.status(500).send({ success: false, message: 'Internal server error' });
@@ -67,6 +79,51 @@ const controller = {
       res.status(500).send({ success: false, message: 'Internal server error' });
     }
   },
+  async calculateOverAllScore(req, res) {
+    try {
+      const { examId } = req.body;
+      const groupScores = await examService.GroupByCatAndFindAvg(examId);
+      const data = [];
+      if (groupScores.length > 0) {
+        groupScores.map(groupScore => categories.forEach((category) => {
+          if (category.categories_COD === groupScore._id) {
+            const result = category.scores.find(score => groupScore.averageScore <= score.isScore);
+            result.isScore = groupScore.averageScore;
+            result.categories_COD = category.categories_COD;
+            data.push(result);
+          }
+        }));
+      }
+      res.status(200).send({ success: true, message: 'Overall Score', data });
+    } catch (error) {
+      res.status(500).send({ success: false, message: 'Internal server error' });
+      logger.log(error.message);
+    }
+  },
+  async calculateSubCategoryScore(req, res) {
+    try {
+      const { examId } = req.body;
+      const categoryScores = await examService.GroupBySubCatAndFindAvg(examId);
+      const data = [];
+      if (categoryScores.length > 0) {
+        categoryScores.map(categoryScore => subCategories.forEach((category) => {
+          if (category.topic_Cod === categoryScore._id) {
+            const result = category.scores.find(score => categoryScore.averageScore <= score.isScore);
+            result.isScore = categoryScore.averageScore;
+            result.categories_COD = category.categories_COD;
+            result.topic_Cod = category.topic_Cod;
+            data.push(result);
+          }
+        }));
+      }
+
+      res.status(200).send({ success: true, message: 'Category Score', data });
+    } catch (error) {
+      res.status(500).send({ success: false, message: 'Internal server error' });
+      logger.log(error.message);
+    }
+  },
+
 };
 
 module.exports = controller;

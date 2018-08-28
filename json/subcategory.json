@@ -1,0 +1,992 @@
+[
+  {
+    "category": "ICT and Digital Literacy",
+    "categories_COD": "A",
+    "topic": "Creación digital vs analógica ",
+    "topic_Cod": "A.1",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Technical-Language Understanding",
+    "categories_COD": "A",
+    "topic": "Creación digital vs analógica ",
+    "topic_Cod": "A.2",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Technical-Language Understanding",
+    "categories_COD": "A",
+    "topic": "Conocimientos de tecnologías y herramientas digitales",
+    "topic_Cod": "A.3",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Technical-Language Understanding",
+    "categories_COD": "A",
+    "topic": "Acceso a tecnologías y herramientas digitales",
+    "topic_Cod": "A.4",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Technical-Language Understanding",
+    "categories_COD": "A",
+    "topic": "Nociones de seguridad en línea",
+    "topic_Cod": "A.5",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Adaptability",
+    "categories_COD": "B",
+    "topic": "Miedo al cambio",
+    "topic_Cod": "B.1",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Adaptability",
+    "categories_COD": "B",
+    "topic": "Miedo a ser reemplazado",
+    "topic_Cod": "B.2",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Adaptability",
+    "categories_COD": "B",
+    "topic": "Dificultad de adaptación",
+    "topic_Cod": "B.3",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Adaptability",
+    "categories_COD": "B",
+    "topic": "Apetencia por las nuevas tecnologías/herramientas digitales",
+    "topic_Cod": "B.4",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Adaptability",
+    "categories_COD": "B",
+    "topic": "Auto-transformación",
+    "topic_Cod": "B.5",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Digital mindset",
+    "categories_COD": "C",
+    "topic": "Naturalidad con las tecnologías",
+    "topic_Cod": "C.1",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Digital MidSet",
+    "categories_COD": "C",
+    "topic": "Curiosidad y cuestionamiento positivo",
+    "topic_Cod": "C.2",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "digital MidSet",
+    "categories_COD": "C",
+    "topic": "Investigación y aprendizaje continuo",
+    "topic_Cod": "C.3",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Digital MindSet",
+    "categories_COD": "C",
+    "topic": "Gestión de la información",
+    "topic_Cod": "C.4",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Digital Mindset",
+    "categories_COD": "C",
+    "topic": "Aprendizaje digital y desarrollo",
+    "topic_Cod": "C.5",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Virtual Work abilities",
+    "categories_COD": "D",
+    "topic": "Identidad Digital ",
+    "topic_Cod": "D.1",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Virtual Work abilities",
+    "categories_COD": "D",
+    "topic": "Socialización Digital",
+    "topic_Cod": "D.2",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Virtual Work abilities",
+    "categories_COD": "D",
+    "topic": "Trabajo colaborativo ",
+    "topic_Cod": "D.3",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Virtual Work abilities",
+    "categories_COD": "D",
+    "topic": "Conocimiento específico del rol",
+    "topic_Cod": "D.4",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Virtual Work abilities",
+    "categories_COD": "D",
+    "topic": "Entiendo el impacto de mi rol en la estrategia de la organización",
+    "topic_Cod": "D.5",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Digital Leadership",
+    "categories_COD": "E",
+    "topic": "Visión de cliente interno",
+    "topic_Cod": "E.1",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Digital Leadership",
+    "categories_COD": "E",
+    "topic": "Alineamiento a las metas",
+    "topic_Cod": "E.2",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Digital Leadership",
+    "categories_COD": "E",
+    "topic": "Liderazgo remoto",
+    "topic_Cod": "E.3",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Digital Leadership",
+    "categories_COD": "E",
+    "topic": "Gestión de diferentes Stakeholders",
+    "topic_Cod": "E.4",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Digital Leadership",
+    "categories_COD": "E",
+    "topic": "Manejo de la velocidad de cambio",
+    "topic_Cod": "E.5",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "digital-business strategy vision",
+    "categories_COD": "F",
+    "topic": "Perfeccionamiento (reinvención) de Actividades/Procesos",
+    "topic_Cod": "F.1",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Mirada global de procesos",
+    "categories_COD": "F",
+    "topic": "Perfeccionamiento (reinvención) de Actividades/Procesos",
+    "topic_Cod": "F.2",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "digital-business strategy vision",
+    "categories_COD": "F",
+    "topic": "Sinergia operativa y financiera",
+    "topic_Cod": "F.3",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "digital-business strategy vision",
+    "categories_COD": "F",
+    "topic": "Internalización de los mercados virtuales",
+    "topic_Cod": "F.4",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "digital-business strategy vision",
+    "categories_COD": "F",
+    "topic": "Visión de Experiencia de Usuario",
+    "topic_Cod": "F.5",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  }
+]

@@ -5,7 +5,7 @@ const { Schema } = mongoose;
 const option = new Schema({
   answer: { type: String },
   code: { type: String },
-  score: { type: String },
+  score: { type: Number },
 });
 
 const question = new Schema({
@@ -17,7 +17,7 @@ const question = new Schema({
   question: { type: String },
   options: [option],
   isAttempted: { type: Boolean, default: false },
-  userScore: { type: String },
+  userScore: { type: Number },
   userCode: { type: String },
 });
 

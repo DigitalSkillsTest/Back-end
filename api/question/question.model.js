@@ -5,7 +5,7 @@ const { Schema } = mongoose;
 const option = new Schema({
   answer: { type: String },
   code: { type: String },
-  score: { type: String },
+  score: { type: Number },
 });
 
 const schema = new Schema({

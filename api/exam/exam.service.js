@@ -35,6 +35,30 @@ const service = {
       { new: true },
     ).exec();
   },
+  GroupByCatAndFindAvg(docId) {
+    return Exam.aggregate([
+      { $unwind: '$questions' },
+      { $match: { _id: mongoose.Types.ObjectId(docId) } },
+      {
+        $group: {
+          _id: '$questions.categories_COD',
+          averageScore: { $avg: ('$questions.userScore' || 0) },
+        },
+      },
+    ]).exec();
+  },
+  GroupBySubCatAndFindAvg(docId) {
+    return Exam.aggregate([
+      { $unwind: '$questions' },
+      { $match: { _id: mongoose.Types.ObjectId(docId) } },
+      {
+        $group: {
+          _id: '$questions.topic_Cod',
+          averageScore: { $avg: ('$questions.userScore' || 0) },
+        },
+      },
+    ]).exec();
+  },
 };
 
 module.exports = service;
