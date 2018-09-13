@@ -86,7 +86,7 @@ const controller = {
       const data = [];
       if (groupScores.length > 0) {
         groupScores.map(groupScore => categories.forEach((category) => {
-          if (category.categories_COD === groupScore._id) {
+          if (category.categories_COD === groupScore._id && groupScore.averageScore) {
             const result = category.scores.find(score => groupScore.averageScore <= score.isScore);
             result.isScore = groupScore.averageScore;
             result.categories_COD = category.categories_COD;
@@ -107,7 +107,7 @@ const controller = {
       const data = [];
       if (categoryScores.length > 0) {
         categoryScores.map(categoryScore => subCategories.forEach((category) => {
-          if (category.topic_Cod === categoryScore._id) {
+          if (category.topic_Cod === categoryScore._id && categoryScore.averageScore) {
             const result = category.scores.find(score => categoryScore.averageScore <= score.isScore);
             result.isScore = categoryScore.averageScore;
             result.categories_COD = category.categories_COD;

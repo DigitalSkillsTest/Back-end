@@ -45,7 +45,7 @@ const service = {
           averageScore: { $avg: ('$questions.userScore' || 0) },
         },
       },
-    ]).exec();
+    ]).sort('_id').exec();
   },
   GroupBySubCatAndFindAvg(docId) {
     return Exam.aggregate([
@@ -57,7 +57,7 @@ const service = {
           averageScore: { $avg: ('$questions.userScore' || 0) },
         },
       },
-    ]).exec();
+    ]).sort('_id').exec();
   },
 };
 

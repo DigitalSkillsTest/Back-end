@@ -3,7 +3,7 @@ const { questionRoutes } = require('../api/question');
 const { userRoutes } = require('../api/user');
 const { authRoutes } = require('../api/auth');
 const { examRoutes } = require('../api/exam');
-// const { resultRoutes } = require('../api/result');
+const { resultRoutes } = require('../api/result');
 const passport = require('../middlewares/passport');
 
 const routes = () => {
@@ -11,7 +11,7 @@ const routes = () => {
   router.use('/user', userRoutes);
   router.use('/question', questionRoutes);
   router.use('/exam', examRoutes);
-  // router.use('/result', resultRoutes);
+  router.use('/result', resultRoutes);
   return router;
 };
 
