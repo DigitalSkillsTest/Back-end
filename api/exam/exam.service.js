@@ -19,7 +19,7 @@ const service = {
       },
     ).exec();
   },
-  findExamIdAndSaveScore(docId, questionId, score, code) {
+  findExamIdAndSaveScore(docId, questionId, score, code, examStatus) {
     return Exam.findOneAndUpdate(
       {
         _id: mongoose.Types.ObjectId(docId),
@@ -27,6 +27,7 @@ const service = {
       },
       {
         $set: {
+          examStatus: examStatus || 'start',
           'questions.$.isAttempted': true,
           'questions.$.userScore': score,
           'questions.$.userCode': code,

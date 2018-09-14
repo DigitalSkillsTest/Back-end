@@ -67,9 +67,9 @@ const controller = {
   async saveAnswer(req, res) {
     try {
       const {
-        examId, questionId, userScore, userCode,
+        examId, questionId, userScore, userCode, examStatus,
       } = req.body;
-      const result = await examService.findExamIdAndSaveScore(examId, questionId, userScore, userCode);
+      const result = await examService.findExamIdAndSaveScore(examId, questionId, userScore, userCode, examStatus);
       if (!result) {
         res.status(200).send({ success: false, message: 'Invalid examId or questionId' });
       }
