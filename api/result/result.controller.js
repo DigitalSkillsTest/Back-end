@@ -22,9 +22,9 @@ const controller = {
         attachments: [{
           filename: req.file.filename,
           path: req.file.path,
-          contentType: 'application/pdf',
+          content: Buffer.from(req.file.buffer, 'utf-8'),
+          contentType: req.file.mimetype,
         }],
-
       };
 
       transporter.sendMail(mailOptions, (error, info) => {
