@@ -3,7 +3,7 @@ const { logger } = require('../../utils');
 
 
 const controller = {
-  sendResultInEmail(req, res) {
+  async sendResultInEmail(req, res) {
     try {
       const { to, subject, text } = req.body;
       const transporter = nodemailer.createTransport({
@@ -27,16 +27,16 @@ const controller = {
         }],
       };
 
-      transporter.sendMail(mailOptions, (error, info) => {
-        if (error) {
-          logger.error(error);
-          res.status(200).send({ success: true, message: error });
-        } else {
-          logger.log(`Email sent: ${info.response}`);
-          res.status(200).send({ success: true, message: 'mail sent success' });
-          // res.status(200).send({ success: true, message: info.response });
-        }
-      });
+      const data = await transporter.sendMail(mailOptions);
+      await delete req.file;
+      // if (error) {
+      //   logger.error(error);
+      //   res.status(200).send({ success: true, message: error });
+      // }
+
+      if (data.response) {
+        res.status(200).send({ success: true, message: 'mail sent success' });
+      }
     } catch (error) {
       logger.error(error);
       res.status(500).send({ success: false, message: 'Internal server error' });
