@@ -42,9 +42,9 @@ module.exports = (app, root) => {
 
   // Enable paths that we want to have it served statically
   if (config.get('server.enableStatic')) {
-    app.use(express.static(path.join(root, config.get('server.static.directory')), config.get('server.static.options')));    
+    app.use(express.static(path.join(root, config.get('server.static.directory')), config.get('server.static.options')));
     app.use('*', (req, res) => {
-      res.status(200).sendFile(path.join(root, config.get('server.static.directory'), 'dskills/index.html'));
+      res.status(200).sendFile(path.join(root, config.get('server.static.directory'), '/index.html'));
     });
   }
 };
