@@ -1,0 +1,7 @@
+{
+    "server": {
+        "CORS": {
+            "allowedHosts": ["https://localhost:4002"]
+        }
+    }    
+}

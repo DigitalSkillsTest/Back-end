@@ -1,0 +1,30 @@
+{
+  "name": "tm-server",
+  "version": "1.0.0",
+  "description": "Express static server to host Angular SPA application and other static assets",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "lint": "eslint **/*.js --ignore-pattern node_modules/"
+  },
+  "author": "Aden",
+  "license": "ISC",  
+  "dependencies": {
+    "compression": "^1.6.2",
+    "convict": "^4.0.0",
+    "cors": "^2.8.3",
+    "express": "^4.15.3",
+    "helmet": "^3.6.1",
+    "morgan": "^1.8.2",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb-base": "^11.2.0",
+    "eslint-plugin-import": "^2.2.0"
+  },
+  "engines": {
+    "node": "8.1.2"
+  }
+}
