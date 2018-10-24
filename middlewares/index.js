@@ -44,7 +44,7 @@ module.exports = (app, root) => {
   if (config.get('server.enableStatic')) {
     app.use(express.static(path.join(root, config.get('server.static.directory')), config.get('server.static.options')));
     app.use('*', (req, res) => {
-      res.status(200).sendFile(path.join(root, config.get('server.static.directory'), '/index.html'));
+      res.status(200).sendFile(path.join(root, config.get('server.static.directory'), 'index.html'));
     });
   }
 };
