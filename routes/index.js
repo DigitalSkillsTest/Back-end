@@ -21,11 +21,11 @@ const routes = () => {
 
 const initialize = (app, root) => {
   // only authentication route allowed without JWT authentication header
-  app.use('/api/auth', authRoutes);
+  app.use('/dskills/api/auth', authRoutes);
 
   // All other router down below require JWT authentication in header, This middelware verify it
   // when successful allow other routes to execute
-  app.use('/api', passport.verifyJWTHeader(), routes());
+  app.use('/dskills/api', passport.verifyJWTHeader(), routes());
 
   app.use('*', (req, res) => {
     res.status(200).sendFile(path.join(root, config.get('server.static.directory'), 'index.html'));
