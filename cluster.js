@@ -4,7 +4,7 @@
 // restarting all the workers and reloading the app.
 const cluster = require('cluster');
 const config = require('./config');
-// desctructure logger from utils
+// destructuring logger from utils
 const { logger } = require('./utils');
 
 const workerCount = config.get('cluster.workerCount');

@@ -105,12 +105,12 @@ const config = convict({
       allowedMethods: {
         doc: 'Allowed HTTP Methods for CORS',
         format: String,
-        default: 'GET,POST,OPTIONS',
+        default: 'GET,POST,OPTIONS,DELETE',
       },
       allowedHeaders: {
         doc: 'Allowed HTTP Headers for CORS',
         format: String,
-        default: 'accept, x-xsrf-token,content-type',
+        default: 'accept, x-xsrf-token,content-type,x-access-token,Authorization',
       },
       exposedHeaders: {
         doc: 'Exposed HTTP Headers for CORS',
@@ -132,6 +132,36 @@ const config = convict({
         format: Number,
         default: 200,
       },
+    },
+    bodyParser: {
+      limit: {
+        doc: 'maximum request body size',
+        format: String,
+        default: '2Mb',
+      },
+    },
+  },
+  socket: {
+    port: {
+      doc: 'Socket port to bind',
+      format: 'port',
+      default: 8080,
+      env: 'SPORT',
+    },
+  },
+  database: {
+    host: {
+      doc: 'connection string for mongoDB',
+      format: String,
+      default: 'mongodb://admin:admin123@ds263791.mlab.com:63791/dstdb',
+      env: 'DB_HOST',
+    },
+  },
+  jwtOptions: {
+    secretOrKey: {
+      doc: 'jwt secretOrKey',
+      format: String,
+      default: 'ashutec2017',
     },
   },
   logger: {
@@ -179,7 +209,6 @@ const config = convict({
 });
 
 config.loadFile(`./config/config-${config.get('env')}.json`);
-
 config.set('logger.httpLogFileName', config.get('logger.path') + config.get('logger.httpLogFileName'));
 config.set('logger.logFileName', config.get('logger.path') + config.get('logger.logFileName'));
 config.set('logger.exceptionLogFileName', config.get('logger.path') + config.get('logger.exceptionLogFileName'));

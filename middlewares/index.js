@@ -1,14 +1,17 @@
 const path = require('path');
 const express = require('express');
 const compression = require('compression');
+const bodyParser = require('body-parser');
 const helmet = require('helmet');
 const config = require('../config');
+const passport = require('./passport');
 const cors = require('./CORS');
-// destrcture logger from utils
+const fileUpload = require('./fileupload');
+
+// destructuring logger from utils
 const { logger } = require('../utils');
 
-
-module.exports = (app, root) => {
+const initialize = (app, root) => {
   // Enable http logging
   if (config.get('server.enableHttpLogging')) { app.use(logger.startHttpLogger()); }
 
@@ -43,8 +46,18 @@ module.exports = (app, root) => {
   // Enable paths that we want to have it served statically
   if (config.get('server.enableStatic')) {
     app.use(express.static(path.join(root, config.get('server.static.directory')), config.get('server.static.options')));
-    app.use('*', (req, res) => {
-      res.status(200).sendFile(path.join(root, config.get('server.static.directory'), 'index.html'));
-    });
   }
+
+  app.use(bodyParser.urlencoded({ extended: true, limit: config.get('server.bodyParser.limit') }));
+
+  // Enable request body parsing in JSON format
+  app.use(bodyParser.json({ limit: config.get('server.bodyParser.limit') }));
+
+  // Initialize passport module
+  passport.initialize(app);
+};
+
+module.exports = {
+  initialize,
+  fileUpload,
 };

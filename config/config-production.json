@@ -1,7 +1,10 @@
 {
     "server": {
         "CORS": {
-            "allowedHosts": ["https://localhost:4002"]
+            "allowedHosts": [
+                "http://localhost:3000",
+                "https://dstwebapp.firebaseapp.com"
+            ]
         }
-    } 
+    }
 }

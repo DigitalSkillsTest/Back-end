@@ -1,4 +1,4 @@
-const winston = require('winston');
+const { transports, createLogger, format } = require('winston');
 const morgan = require('morgan');
 const config = require('../config');
 
@@ -6,8 +6,9 @@ const httpTransport = [];
 const loggerTransport = [];
 const exceptionHandlerTransport = [];
 
+
 if (config.get('logger.enableFileTransport')) {
-  httpTransport.push(new winston.transports.File({
+  httpTransport.push(new transports.File({
     filename: config.get('logger.httpLogFileName'),
     json: true,
     maxsize: config.get('logger.logFileSize'),
@@ -15,14 +16,14 @@ if (config.get('logger.enableFileTransport')) {
     colorize: false,
   }));
 
-  loggerTransport.push(new winston.transports.File({
+  loggerTransport.push(new transports.File({
     filename: config.get('logger.logFileName'),
     json: true,
     maxsize: config.get('logger.logFileSize'),
     colorize: false,
   }));
 
-  exceptionHandlerTransport.push(new winston.transports.File({
+  exceptionHandlerTransport.push(new transports.File({
     filename: config.get('logger.exceptionLogFileName'),
     json: true,
     maxsize: config.get('logger.logFileSize'),
@@ -31,32 +32,38 @@ if (config.get('logger.enableFileTransport')) {
 }
 
 if (config.get('logger.enableConsoleTransport')) {
-  httpTransport.push(new winston.transports.Console({
-    json: false,
-    colorize: true,
+  httpTransport.push(new transports.Console({
+    format: format.combine(
+      format.colorize(),
+      format.simple(),
+    ),
   }));
 
-  loggerTransport.push(new winston.transports.Console({
-    json: false,
-    colorize: true,
+  loggerTransport.push(new transports.Console({
+    format: format.combine(
+      format.colorize(),
+      format.simple(),
+    ),
   }));
 
-  exceptionHandlerTransport.push(new winston.transports.Console({
-    json: false,
-    colorize: true,
+  exceptionHandlerTransport.push(new transports.Console({
+    format: format.combine(
+      format.colorize(),
+      format.simple(),
+    ),
   }));
 }
 
-winston.emitErrs = true;
+// winston.emitErrs = true;
 
 // created separate httpLogger because we want to log express request separatly
-const httpLogger = new winston.Logger({
+const httpLogger = createLogger({
   transports: httpTransport,
   exitOnError: true,
 });
 
 // logger to log all other logs type from application to exception
-const logger = new winston.Logger({
+const logger = createLogger({
   transports: loggerTransport,
   exceptionHandlers: exceptionHandlerTransport,
   exitOnError: true,

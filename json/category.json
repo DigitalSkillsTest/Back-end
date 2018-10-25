@@ -1,0 +1,188 @@
+[
+  {
+    "category": "ICT and Digital Literacy",
+    "categories_COD": "A",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Adaptability",
+    "categories_COD": "B",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Digital mindset",
+    "categories_COD": "C",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Virtual Work abilities",
+    "categories_COD": "D",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "Digital Leadership",
+    "categories_COD": "E",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  },
+  {
+    "category": "digital-business strategy vision",
+    "categories_COD": "F",
+    "scores": [
+      {
+        "isScore": 1,
+        "longVersionTxt": "sentences 1",
+        "sortVersionTxt": "sentences 11"
+      },
+      {
+        "isScore": 2,
+        "longVersionTxt": "sentences 2",
+        "sortVersionTxt": "sentences 22"
+      },
+      {
+        "isScore": 3,
+        "longVersionTxt": "sentences 3",
+        "sortVersionTxt": "sentences 33"
+      },
+      {
+        "isScore": 4,
+        "longVersionTxt": "sentences 4",
+        "sortVersionTxt": "sentences 44"
+      },
+      {
+        "isScore": 5,
+        "longVersionTxt": "sentences 5",
+        "sortVersionTxt": "sentences 55"
+      }
+    ]
+  }
+]
