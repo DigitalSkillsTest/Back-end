@@ -1,0 +1,17 @@
+[Service]
+# Required on some systems
+WorkingDirectory=/var/www/aden.org/html/dskills
+ExecStart=/usr/local/bin/node server.js
+Restart=always
+ # Restart service after 10 seconds if node service crashes
+ RestartSec=10
+ # Output to syslog
+StandardOutput=syslog
+StandardError=syslog
+SyslogIdentifier=dst-service
+User=dskills
+#Group=<alternate group>
+Environment=NODE_ENV=production
+
+[Install]
+WantedBy=multi-user.target
