@@ -3,11 +3,7 @@ const convict = require('convict');
 const config = convict({
   env: {
     doc: 'The applicaton environment.',
-<<<<<<< HEAD
     format: ['production', 'development', 'heroku', 'test', 'demo', 'failover'],
-=======
-    format: ['production', 'development', 'test', 'demo', 'failover'],
->>>>>>> 9c4f7d8e933288b2dfe8868b7b81cd49af784cf4
     default: 'development',
     env: 'NODE_ENV',
     arg: 'env',
@@ -23,11 +19,7 @@ const config = convict({
     port: {
       doc: 'HTTP port to bind',
       format: 'port',
-<<<<<<< HEAD
       default: 80,
-=======
-      default: 3002,
->>>>>>> 9c4f7d8e933288b2dfe8868b7b81cd49af784cf4
       env: 'PORT',
     },
     addressFamily: {

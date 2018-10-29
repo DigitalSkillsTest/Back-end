@@ -1,11 +1,7 @@
-<<<<<<< HEAD
 const path = require('path');
 const router = require('express').Router();
 
 const config = require('../config');
-=======
-const router = require('express').Router();
->>>>>>> 9c4f7d8e933288b2dfe8868b7b81cd49af784cf4
 const { questionRoutes } = require('../api/question');
 const { userRoutes } = require('../api/user');
 const { authRoutes } = require('../api/auth');
