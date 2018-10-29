@@ -153,8 +153,8 @@ const config = convict({
     host: {
       doc: 'connection string for mongoDB',
       format: String,
-      default: 'mongodb://127.0.0.1:27017/dstdb',
-      // default: 'mongodb://admin:admin123@ds263791.mlab.com:63791/dstdb',
+      // default: 'mongodb://127.0.0.1:27017/dstdb',
+      default: 'mongodb://admin:admin123@ds263791.mlab.com:63791/dstdb',
       env: 'DB_HOST',
     },
   },
