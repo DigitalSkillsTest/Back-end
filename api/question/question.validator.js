@@ -81,7 +81,7 @@ const validator = {
       .exists()
       .withMessage('options score is required!')
       .isMongoId()
-      .withMessage('Invalid Movie Id'),
+      .withMessage('Invalid score Id'),
   ],
 };
 
