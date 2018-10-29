@@ -7,7 +7,7 @@ const validator = require('./question.validator');
 router.get('/', controller.getQuestionsList);
 router.get('/:id', controller.getQuestionById);
 router.post('/', [...validator.validateAddQuestion, validator.customValidator], controller.addQuestion);
-router.post('/:id', controller.updateQuestion);
+router.post('/:id', [...validator.validateUpdateQuestion, validator.customValidator], controller.updateQuestion);
 router.post('/bulk', controller.addMultipleQuestions);
 router.delete('/:id', controller.deleteQuestion);
 
