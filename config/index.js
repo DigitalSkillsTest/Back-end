@@ -3,7 +3,7 @@ const convict = require('convict');
 const config = convict({
   env: {
     doc: 'The applicaton environment.',
-    format: ['production', 'development', 'test', 'demo', 'failover'],
+    format: ['production', 'development', 'heroku', 'test', 'demo', 'failover'],
     default: 'development',
     env: 'NODE_ENV',
     arg: 'env',

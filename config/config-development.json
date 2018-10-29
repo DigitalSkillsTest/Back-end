@@ -10,6 +10,9 @@
                 "https://www.aden.org",
                 "http://www.aden.org"
             ]
+        },
+        "database":{
+            "host":"mongodb://admin:admin123@ds263791.mlab.com:63791/dstdb"
         }
     }
 }

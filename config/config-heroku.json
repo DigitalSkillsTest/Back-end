@@ -13,6 +13,6 @@
         }
     },
     "database": {
-        "host": "mongodb://127.0.0.1:27017/dstdb"
+        "host": "mongodb://admin:admin123@ds263791.mlab.com:63791/dstdb"
     }
 }
