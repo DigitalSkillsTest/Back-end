@@ -1,11 +1,8 @@
 {
     "server": {
         "CORS": {
-            "allowedHosts": [
-                "*",
-                "http://localhost:80",
+            "allowedHosts": [                                
                 "http://localhost:3000",
-                "http://localhost:5000",
                 "https://dstwebapp.firebaseapp.com",
                 "https://www.aden.org",
                 "http://www.aden.org"
@@ -14,5 +11,9 @@
     },
     "database": {
         "host": "mongodb://127.0.0.1:27017/dstdb"
+    },
+    "mail":{
+        "email":"digital.skills@aden.org",
+        "password":"ds2910DS"
     }
 }

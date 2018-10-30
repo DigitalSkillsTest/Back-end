@@ -1,5 +1,6 @@
 const nodemailer = require('nodemailer');
 const { logger } = require('../../utils');
+const config = require('../../config');
 
 
 const controller = {
@@ -9,13 +10,13 @@ const controller = {
       const transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-          user: 'ashutec.demo@gmail.com',
-          pass: 'ashutec@2017',
+          user: config.get('mail.email'),
+          pass: config.get('mail.password'),
         },
       });
 
       const mailOptions = {
-        from: 'ashutec.demo@gmail.com',
+        from: config.get('mail.email'),
         to,
         subject,
         html: `<b>${text}</b><br/><h4>pdf</h4>`,

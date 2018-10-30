@@ -207,6 +207,18 @@ const config = convict({
       default: './logs/',
     },
   },
+  mail: {
+    email: {
+      doc: 'email address for SMTP',
+      format: String,
+      default: 'ashutec.demo@gmail.com',
+    },
+    password: {
+      doc: 'password for SMTP',
+      format: String,
+      default: 'ashutec@2017',
+    },
+  },
 });
 
 config.loadFile(`./config/config-${config.get('env')}.json`);

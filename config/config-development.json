@@ -1,18 +1,11 @@
 {
     "server": {
         "CORS": {
-            "allowedHosts": [
-                "*",
-                "http://localhost:80",
+            "allowedHosts": [                
                 "http://localhost:3000",
                 "http://localhost:5000",
-                "https://dstwebapp.firebaseapp.com",
-                "https://www.aden.org",
-                "http://www.aden.org"
+                "https://dstwebapp.firebaseapp.com"
             ]
-        },
-        "database":{
-            "host":"mongodb://admin:admin123@ds263791.mlab.com:63791/dstdb"
-        }
+        }        
     }
 }
