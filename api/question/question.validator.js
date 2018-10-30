@@ -79,7 +79,7 @@ const validator = {
       .exists()
       .withMessage('options score is required!')
       .isNumeric()
-      .withMessage('score must be a number')   
+      .withMessage('score must be a number'),
   ],
 };
 
