@@ -44,6 +44,9 @@ const validator = {
       .withMessage('score must be a number'),
   ],
   validateUpdateQuestion: [
+    check('id')
+      .isMongoId()
+      .withMessage('Invalid Document Id'),
     check('categories_COD')
       .exists().withMessage('categories_COD is required'),
     check('category')
