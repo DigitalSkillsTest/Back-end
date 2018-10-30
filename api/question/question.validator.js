@@ -79,12 +79,7 @@ const validator = {
       .exists()
       .withMessage('options score is required!')
       .isNumeric()
-      .withMessage('score must be a number'),
-    check('options.*._id')
-      .exists()
-      .withMessage('options score is required!')
-      .isMongoId()
-      .withMessage('Invalid score Id'),
+      .withMessage('score must be a number')   
   ],
 };
 
