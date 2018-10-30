@@ -40,7 +40,7 @@ const controller = {
       }
     } catch (error) {
       logger.error(error);
-      res.status(500).send({ success: false, message: 'Internal server error' });
+      res.status(500).send({ success: false, message: 'Internal server error', error });
     }
   },
 };
