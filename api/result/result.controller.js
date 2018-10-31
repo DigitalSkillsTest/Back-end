@@ -7,16 +7,15 @@ const controller = {
   async sendResultInEmail(req, res) {
     try {
       const { to, subject, text } = req.body;
+      const user = config.get('mail.email');
+      const pass = config.get('mail.password');
       const transporter = nodemailer.createTransport({
         service: 'gmail',
-        auth: {
-          user: config.get('mail.email'),
-          pass: config.get('mail.password'),
-        },
+        auth: { user, pass },
       });
 
       const mailOptions = {
-        from: config.get('mail.email'),
+        from: user,
         to,
         subject,
         html: `<b>${text}</b><br/><h4>pdf</h4>`,
@@ -40,7 +39,7 @@ const controller = {
       }
     } catch (error) {
       logger.error(error);
-      res.status(500).send({ success: false, message: 'Internal server error', error });
+      res.status(500).send({ success: false, message: 'Internal server error' });
     }
   },
 };
