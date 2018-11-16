@@ -18,7 +18,7 @@ const controller = {
         from: user,
         to,
         subject,
-        html: `<b>${text}</b><br/><h4>pdf</h4>`,
+        html: `<b>${text}</b>`,
         attachments: [{
           filename: req.file.filename,
           path: req.file.path,
